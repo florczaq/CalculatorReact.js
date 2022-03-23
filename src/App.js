@@ -29,14 +29,16 @@ export default class App extends Component {
 					try {
 						let t = Math.round(
 							(stringMath(this.state.value) +
-								Number.EPSILON) * 100) / 100;
+								Number.EPSILON) * 10000) / 10000;
 
 						this.setState({ value: t }); break;
 					} catch (e) {
 						this.setState({ value: ":(" }); break;
 					}
 				default:
-					this.setState({ value: this.state.value + txt });
+					if (this.state.value !== ":(")
+						this.setState({ value: this.state.value + txt });
+					break;
 			}
 		}
 	}
