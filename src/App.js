@@ -25,19 +25,19 @@ export default class App extends Component {
 		if (txt !== undefined && txt !== ' ') {
 			switch (txt) {
 				case 'C': this.setState({ value: "" }); break;
-				case '=':
-					try {
-						let t = Math.round(
-							(stringMath(this.state.value) +
-								Number.EPSILON) * 10000) / 10000;
 
+				case '=':
+
+					try {
+						let t = Math.round((stringMath(this.state.value) + Number.EPSILON) * 10000000) / 10000000;
 						this.setState({ value: t }); break;
-					} catch (e) {
-						this.setState({ value: ":(" }); break;
-					}
+					} catch (e) { this.setState({ value: ":(" }); break; }
+
 				default:
 					if (this.state.value !== ":(")
-						this.setState({ value: this.state.value + txt });
+						this.setState((prevState) => {
+							return { value: prevState.value + txt }
+						});
 					break;
 			}
 		}
