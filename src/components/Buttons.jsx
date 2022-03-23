@@ -11,7 +11,7 @@ export default class Buttons extends Component {
                 <Button dataFromParent={data[2]} updateV={this.props.updateMeth.bind(this)} />
                 <Button dataFromParent={data[3]} updateV={this.props.updateMeth.bind(this)} />
             </div>
-        );
+        ); 
     }
 }
 
