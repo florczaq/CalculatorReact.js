@@ -1,0 +1,33 @@
+.App {
+	margin: auto;
+	margin-top: 5vw;
+	border: 1px solid rgb(0, 0, 0);
+	display: flex;
+	height: 80vh;
+	width: 40vw;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+    color: rgb(153, 153, 153);
+    font-family: 'Lucida Sans';
+    text-align: center;
+}
+
+.forButton button{
+	width: 100%;
+}
+
+.scr{
+    display: flex;
+    min-height: 3rem;
+    font-size: 4vw;
+    height: 36vh;
+    width: 40vw;
+    padding: 1vw;
+    box-sizing: border-box;    
+    border: 1px solid rgb(87, 84, 84);
+    background-color: rgb(24, 23, 23);
+    text-align: right;
+    justify-content: right;
+	align-items: center;
+}

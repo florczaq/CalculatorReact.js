@@ -1,0 +1,29 @@
+.wers{
+    padding: 0;
+    margin: 0;
+    width: 40vw;
+    user-select: none;
+    height: 12vh;
+}
+
+.bts{
+    height: 12vh;
+    width: 10vw;
+    margin: 0;
+    background-color: #dbd9d9cb;
+    font-family: 'Courier New';
+    font-size: 3vw;
+    border: .2vw solid rgb(87, 84, 84);
+}
+
+.bts:hover{
+    color : #fff;
+    font-weight: bold;
+    background-color: rgb(48, 47, 47);
+    border: 1px solid rgb(255, 255, 255);  
+}
+
+.bts:active{
+    background-color: rgb(34, 34, 34);
+}
+
